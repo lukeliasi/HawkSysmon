@@ -1,16 +1,33 @@
 {
-  "name": "resource-monitor",
+  "name": "hawksysmon",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "A Node.js application for monitoring system resources and sending alert emails when thresholds are exceeded.",
+  "main": "monitor.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node monitor.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lukeliasi/HawkSysmon.git"
+  },
+  "keywords": [
+    "resource",
+    "monitor",
+    "system",
+    "CPU",
+    "memory",
+    "disk",
+    "network",
+    "monitoring",
+    "alerts",
+    "email",
+    "docker",
+    "nodejs"
+  ],
+  "author": "Luke Liasi",
+  "license": "MIT",
   "dependencies": {
-    "nodemailer": "^6.9.13",
-    "systeminformation": "^5.22.9"
+    "nodemailer": "^6.6.3",
+    "systeminformation": "^5.7.9"
   }
 }
