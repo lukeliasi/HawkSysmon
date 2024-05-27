@@ -22,7 +22,7 @@ class ResourceMonitor {
 
   async initialize() {
     this.networkInterfaces = await utils.getNetworkInterfaces();
-    this.printSystemInfo();
+    await this.printSystemInfo();
     this.startMonitoring();
   }
 
