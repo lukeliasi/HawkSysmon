@@ -43,8 +43,9 @@ class ResourceMonitor {
       ]);
 
       const totalMem = memory.total / (1024 * 1024 * 1024); // in GB
-      const usedMem = memory.used / (1024 * 1024 * 1024); // in GB
-      const memUsage = (memory.used / memory.total) * 100;
+      const availableMem = memory.available / (1024 * 1024 * 1024); // in GB
+      const usedMem = totalMem - availableMem; // in GB
+      const memUsage = (usedMem / totalMem) * 100;
       const currentTime = new Date().toLocaleString();
 
       console.log(`\n----------------------------------------`);
