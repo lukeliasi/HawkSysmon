@@ -35,3 +35,4 @@ npm run start
 
 # TODO:
   - Add more alerts transports, e.g: SMS, Slack, Telegram, etc...
+  - Web UI
